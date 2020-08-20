@@ -12,7 +12,7 @@ contract TestBlockdemyCoin {
 
         Assert.equal(
             coin.getBalance(tx.origin),
-            expected,
+            expectedBalance,
             "First account does not have a 1000 coins"
         );
     }
