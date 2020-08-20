@@ -18,7 +18,10 @@
  *
  */
 
-// const HDWalletProvider = require('@truffle/hdwallet-provider');
+const HDWalletProvider = require('@truffle/hdwallet-provider');
+const dotenv = require('dotenv');
+dotenv.config();
+
 // const infuraKey = "fj4jll3k.....";
 //
 // const fs = require('fs');
@@ -72,6 +75,18 @@ module.exports = {
     // network_id: 2111,   // This network is yours, in the cloud.
     // production: true    // Treats this network as if it was a public net. (default: false)
     // }
+    teams: {
+      provider: function () {
+        return new HDWalletProvider(
+          process.env.MNEMONIC,
+          'https://sandbox.truffleteams.com/b30c19bd-55e1-43f9-a571-413c3462854b',
+          0,
+          10,
+          false
+        );
+      },
+      network_id: 1596677671532,
+    },
   },
 
   // Set default mocha options here, use special reporters etc.

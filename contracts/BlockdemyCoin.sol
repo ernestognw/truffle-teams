@@ -25,7 +25,7 @@ contract BlockdemyCoin {
         balances[receiver] += amount;
     }
 
-    function getBalance() public view returns (uint256) {
-        return balances[msg.sender];
+    function getBalance(address adr) public view returns (uint256) {
+        return balances[adr];
     }
 }

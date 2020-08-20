@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/ernestognw/truffle-teams/issues"
   },
-  "homepage": "https://github.com/ernestognw/truffle-teams#readme"
+  "homepage": "https://github.com/ernestognw/truffle-teams#readme",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.0.42",
+    "dotenv": "^8.2.0"
+  }
 }
