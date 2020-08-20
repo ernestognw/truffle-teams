@@ -14,6 +14,6 @@ contract TestBlockdemyCoin {
             coin.getBalance(tx.origin),
             expected,
             "First account does not have a 1000 coins"
-        )
+        );
     }
 }
